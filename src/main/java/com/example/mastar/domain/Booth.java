@@ -1,7 +1,10 @@
 package com.example.mastar.domain;
 
+import javax.validation.constraints.NotNull;
+
 public class Booth {
     private Integer id;
+    @NotNull
     private String boothName;
 
     public Integer getId() {

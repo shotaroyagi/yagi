@@ -2,24 +2,21 @@ package com.example.mastar.dao;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
-
 import com.example.mastar.domain.Booth;
 
 public class BoothDaoImpl implements BoothDao {
 
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
-    
-    @Autowired
-    private NamedParameterJdbcTemplate npJdbcTemplate;
-    
+    // @Autowired
+    // private JdbcTemplate jdbcTemplate;
+
+    // @Autowired
+    // private NamedParameterJdbcTemplate npJdbcTemplate;
+
     @Override
     public List<Booth> findAll()
 	    throws Exception {
 	// TODO 自動生成されたメソッド・スタブ
+
 	return null;
     }
 
