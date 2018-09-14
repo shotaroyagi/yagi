@@ -1,10 +1,10 @@
 package com.example.mastar.domain;
 
-import javax.validation.constraints.NotNull;
+import org.hibernate.validator.constraints.NotBlank;
 
 public class Booth {
     private Integer id;
-    @NotNull
+    @NotBlank
     private String boothName;
 
     public Integer getId() {

@@ -1,11 +1,15 @@
 package com.example.mastar.domain;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 public class Shop {
     private Integer id;
+    @NotBlank
+    private Booth booth;
+    @NotBlank
     private String shopName;
+    @NotBlank
     private String group;
-    private Integer boothId;
-    private String boothName;
 
     public Integer getId() {
 	return id;
@@ -13,6 +17,14 @@ public class Shop {
 
     public void setId(Integer id) {
 	this.id = id;
+    }
+
+    public Booth getBooth() {
+	return booth;
+    }
+
+    public void setBooth(Booth booth) {
+	this.booth = booth;
     }
 
     public String getShopName() {
@@ -31,19 +43,4 @@ public class Shop {
 	this.group = group;
     }
 
-    public Integer getBoothId() {
-	return boothId;
-    }
-
-    public void setBoothId(Integer boothId) {
-	this.boothId = boothId;
-    }
-
-    public String getBoothName() {
-	return boothName;
-    }
-
-    public void setBoothName(String boothName) {
-	this.boothName = boothName;
-    }
 }

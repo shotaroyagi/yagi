@@ -52,8 +52,24 @@
 		<property name="mappingResources">
 			<list>
 				<value>hbm/Admin.hbm.xml</value>
+				<value>hbm/Booth.hbm.xml</value>
+				<value>hbm/BoothStaff.hbm.xml</value>
+				<value>hbm/BoothEntry.hbm.xml</value>
+				<value>hbm/Cart.hbm.xml</value>
+				<value>hbm/ChaserTable.xml</value>
+				<value>hbm/Entrance.hbm.xml</value>
+				<value>hbm/Exit.hbm.xml</value>
+				<value>hbm/Item.hbm.xml</value>
 				<value>hbm/Member.hbm.xml</value>
-				<value>hbm/MemberType.hbm.xml</value>
+				<value>hbm/MemberAdmin.hbm.xml</value>
+				<value>hbm/Order.hbm.xml</value>
+				<value>hbm/OrderMonitor.xml</value>
+				<value>hbm/Position.hbm.xml</value>
+				<value>hbm/Purchase.xml</value>
+				<value>hbm/Shop.hbm.xml</value>
+				<value>hbm/Staff.hbm.xml</value>
+				<value>hbm/StaffAdmin.xml</value>
+				<value>hbm/Ticket.hbm.xml</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">

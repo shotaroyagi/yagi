@@ -1,14 +1,19 @@
 package com.example.mastar.domain;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 public class Item {
     private Integer id;
-    private String itemName;
-    private Integer price;
+    @NotBlank
+    private Booth booth;
+    @NotBlank
+    private Shop shop;
+    @NotBlank
     private String category;
-    private Integer shopId;
-    private Integer boothId;
-    private String shopName;
-    private String boothName;
+    @NotBlank
+    private String itemName;
+    @NotBlank
+    private Integer price;
 
     public Integer getId() {
 	return id;
@@ -16,6 +21,30 @@ public class Item {
 
     public void setId(Integer id) {
 	this.id = id;
+    }
+
+    public Booth getBooth() {
+	return booth;
+    }
+
+    public void setBooth(Booth booth) {
+	this.booth = booth;
+    }
+
+    public Shop getShop() {
+	return shop;
+    }
+
+    public void setShop(Shop shop) {
+	this.shop = shop;
+    }
+
+    public String getCategory() {
+	return category;
+    }
+
+    public void setCategory(String category) {
+	this.category = category;
     }
 
     public String getItemName() {
@@ -32,46 +61,6 @@ public class Item {
 
     public void setPrice(Integer price) {
 	this.price = price;
-    }
-
-    public String getCategory() {
-	return category;
-    }
-
-    public void setCategory(String category) {
-	this.category = category;
-    }
-
-    public Integer getShopId() {
-	return shopId;
-    }
-
-    public void setShopId(Integer shopId) {
-	this.shopId = shopId;
-    }
-
-    public Integer getBoothId() {
-	return boothId;
-    }
-
-    public void setBoothId(Integer boothId) {
-	this.boothId = boothId;
-    }
-
-    public String getShopName() {
-	return shopName;
-    }
-
-    public void setShopName(String shopName) {
-	this.shopName = shopName;
-    }
-
-    public String getBoothName() {
-	return boothName;
-    }
-
-    public void setBoothName(String boothName) {
-	this.boothName = boothName;
     }
 
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.example.javaclub.domain">
+	<class name="Booth" table="booth">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<many-to-one name="booth" column="booth_id" />
+		<many-to-one name="shop" column="shop_id" />
+		<property name="category" column="category" type="string" />
+		<property name="itemName" column="item_name" type="string" />
+		<property name="price" column="price" type="integer" />
+	</class>
+</hibernate-mapping>
